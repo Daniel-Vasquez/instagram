@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  /* border: 1px solid green; */
+  width: 1000px;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.container .container_img {
+  width: 250px;
+}
+
+.container .container_img img {
+  width: 70%;
+  height: 50px;
+}
+
+.container .main_input {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .main_input_container {
+  width: 200px;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  border-radius: 3px;
+}
+
+.container .main_input input {
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding-left: 40px;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+
+.container .main_input .search_icon {
+  background-image: url("../../img/lupa.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 18px;
+  height: 18px;
+}
+
+.main_icons {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  align-items: center;
+}
+
+.main_icons .main_icons__home {
+  background-image: url("../../img/home.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.main_icons .main_icons__message {
+  background-image: url("../../img/enviar.png");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  width: 100%;
+  height: 25px;
+}
+
+.main_icons .main_icons__compass {
+  background-image: url("../../img/brujula.png");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  width: 100%;
+  height: 25px;
+}
+
+.main_icons .main_icons__heart {
+  background-image: url("../../img/corazon.png");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  width: 100%;
+  height: 25px;
+}
+
+.main_icons .main_icons__me {
+  background-image: url("../../img/user.png");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  height: 25px;
+  width: 100%;
+}
