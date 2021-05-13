@@ -1,16 +1,18 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import LayoutNavbar from "./components/LayoutNavber";
 import Home from "./pages/Home.js";
-import Carrusel from "./components/Carrusel.js";
+import Perfil from "./pages/Perfil.js";
 
 function App() {
   return (
     <BrowserRouter>
       <LayoutNavbar>
-        <Home />
-        <Carrusel />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/perfil" component={Perfil} />
+        </Switch>
       </LayoutNavbar>
     </BrowserRouter>
   );

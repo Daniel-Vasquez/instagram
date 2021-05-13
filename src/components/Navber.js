@@ -28,7 +28,7 @@ const Navbar = () => {
           <Link className="main_icons__message" to="/"></Link>
           <Link className="main_icons__compass" to="/"></Link>
           <Link className="main_icons__heart" to="/"></Link>
-          <Link className="main_icons__me" to="/"></Link>
+          <Link className="main_icons__me" to="/perfil"></Link>
         </section>
       </div>
     </header>
