@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.Home {
+  display: flex;
+  width: 1000px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.Home-container {
+  border: 1px solid green;
+  margin: 15px;
+}

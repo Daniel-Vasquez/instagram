@@ -1,6 +1,5 @@
 .carousel {
-  width: 40%;
-  margin: 0 auto;
+  width: 80%;
   overflow-y: hidden;
   scrollbar-width: none;
   position: relative;
