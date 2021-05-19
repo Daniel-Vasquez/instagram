@@ -1,0 +1,129 @@
+.Hero {
+  display: grid;
+  grid-template: 0.2fr 3fr 0.2fr auto 0.2fr / 1fr;
+  width: 80%;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+}
+
+.Hero-imgTitleButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+
+.Hero-left {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+.Hero-left a {
+  text-decoration: none;
+  color: black;
+}
+
+.Hero-left:hover a {
+  text-decoration: underline;
+}
+
+.Hero-imgTitle__img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.Hero-right {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+.Hero-right a {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.Hero-img img {
+  width: 100%;
+}
+
+.Hero-icons {
+  display: grid;
+  grid-template: 1fr / 3fr 1fr;
+  padding: 10px 15px;
+}
+
+.Hero-icons__left .Hero-icons__heart {
+  background-image: url("../../img/corazon.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  border: none;
+  margin-right: 15px;
+}
+
+.Hero-icons__left .Hero-icons__heart:hover {
+  cursor: pointer;
+}
+
+.Hero-icons__left .Hero-icons__commentary {
+  background-image: url("../../img/comentario.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  border: none;
+  margin-right: 15px;
+}
+
+.Hero-icons__left .Hero-icons__commentary:hover {
+  cursor: pointer;
+}
+
+.Hero-icons__left .Hero-icons__send {
+  background-image: url("../../img/enviar.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  border: none;
+  margin-right: 15px;
+}
+
+.Hero-icons__left .Hero-icons__send:hover {
+  cursor: pointer;
+}
+
+.Hero-icons__right {
+  text-align: end;
+}
+
+.Hero-icons__right .Hero-icons__save {
+  background-image: url("../../img/save.png");
+  background-size: 100% 100%;
+  background-color: transparent;
+  height: 30px;
+  width: 30px;
+  border: none;
+  margin-right: 15px;
+}
+
+.Hero-icons__right .Hero-icons__save:hover {
+  cursor: pointer;
+}
+
+.Hero-text {
+  padding: 5px 15px;
+}
+
+.Hero-text p {
+  margin: 0;
+}
