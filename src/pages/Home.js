@@ -7,11 +7,11 @@ const Home = () => {
   return (
     <div className="Home">
       <div className="Home-container">
-        <div>
+        <div className="Home-container__left">
           <Carrusel />
           <Hero />
         </div>
-        <div>
+        <div className="Home-container__right">
           <h1>Soy componente chiquito</h1>
         </div>
       </div>

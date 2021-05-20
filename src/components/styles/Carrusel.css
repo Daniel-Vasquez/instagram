@@ -9,6 +9,7 @@
   background-color: white;
   border-radius: 3px;
   margin-bottom: 30px;
+  overflow: scroll;
   /* border: 1px solid red; */
 }
 
@@ -36,7 +37,7 @@
 .carousel__container {
   white-space: nowrap;
   height: 100%;
-  width: 100%;
+  max-width: 700px;
   /* border: 1px solid green; */
 }
 
@@ -44,7 +45,7 @@
   background-color: purple;
   width: 65px;
   height: 60px;
-  margin-right: 10px;
+  margin-right: 50px;
   display: inline-block;
   cursor: pointer;
   transition: 450ms all;

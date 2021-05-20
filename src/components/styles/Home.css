@@ -7,14 +7,14 @@ body {
 }
 
 .Home {
-  display: flex;
-  width: 1000px;
+  max-width: 1000px;
   border: 1px solid red;
   margin: 0 auto;
 }
 
 .Home-container {
   display: grid;
+  max-width: 100%;
   grid-template: 1fr / 2fr 1fr;
   /* border: 1px solid green; */
   margin: 15px;
@@ -23,3 +23,11 @@ body {
 .container-Hero__logo {
   display: flex;
 }
+
+/* .Home-container__left {
+  width: 50%;
+}
+
+.Home-container__right {
+  width: 50%;
+} */
