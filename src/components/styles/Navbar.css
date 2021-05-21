@@ -14,6 +14,9 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #dbdbdb;
   height: 54px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 
 .container {
