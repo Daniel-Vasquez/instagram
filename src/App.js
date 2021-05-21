@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import "./App.css";
 import LayoutNavbar from "./components/LayoutNavber";
 import Home from "./pages/Home.js";
 import Perfil from "./pages/Perfil.js";

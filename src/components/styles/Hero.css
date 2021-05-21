@@ -3,6 +3,7 @@
   grid-template: 0.2fr 3fr 0.2fr auto 0.2fr / 1fr;
   background-color: white;
   border: 1px solid #dbdbdb;
+  margin-bottom: 40px;
 }
 
 .Hero-imgTitleButton {

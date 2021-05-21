@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-perfiles {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  margin-top: 10px;
+  /* border: 1px solid red; */
+}
+
+.perfiles {
+  display: grid;
+  grid-template: 80px 30px 280px auto / 1fr;
+  height: 100%;
+}
+
+.perfiles-personal {
+  display: grid;
+  grid-template: 1fr / 2fr 1fr;
+  margin: 10px 0;
+}
+
+.perfiles-personal__imgAndName {
+  display: flex;
+  align-items: center;
+}
+
+.perfiles-personal__imgAndName img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.perfiles-personal__imgAndName a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.perfiles-personal__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.perfiles-personal__button button {
+  height: 30px;
+  width: 80px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.perfiles-personal__sugerencias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+
+.perfiles-personal__sugerencias p {
+  margin: 0;
+  font-weight: 600;
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+.perfiles-personal__sugerencias a {
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+  color: #262626;
+}
+
+.perfiles-personal__usuarios {
+  display: grid;
+  grid-template: 50px 50px 50px 50px 50px / 1fr;
+}
+
+.perfiles-personal__message {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  height: 100px;
+}
+
+.perfiles-personal__message a {
+  height: 5px;
+  color: #c7c7c7;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: none;
+  padding: 0 5px;
+}
+
+.perfiles-personal__message p {
+  margin: 0;
+  color: #c7c7c7;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+}

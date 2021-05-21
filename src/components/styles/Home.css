@@ -8,15 +8,13 @@ body {
 
 .Home {
   max-width: 1000px;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
 .Home-container {
   display: grid;
   width: 100%;
-  grid-template: 1fr / 2fr 1.1fr;
-  /* border: 1px solid green; */
+  grid-template: 1fr / 2fr 1fr;
 }
 
 .container-Hero__logo {
@@ -29,6 +27,6 @@ body {
 }
 
 .Home-container__right {
-  min-width: 100%;
+  width: 100%;
   padding: 15px;
 }
