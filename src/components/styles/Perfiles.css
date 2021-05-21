@@ -93,8 +93,10 @@ body {
 .perfiles-personal__message {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   padding: 5px;
   height: 100px;
+  color: #c7c7c7;
 }
 
 .perfiles-personal__message a {

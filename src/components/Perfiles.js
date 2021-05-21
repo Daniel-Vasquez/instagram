@@ -5,7 +5,7 @@ import DanPerfil from "../img/danPerfil.png";
 
 import PerfilesUsuarios from "./PerfilesUsuarios";
 
-function Perfiles(props) {
+function Perfiles() {
   return (
     <section className="container-perfiles">
       <div className="perfiles">
@@ -32,18 +32,12 @@ function Perfiles(props) {
           <PerfilesUsuarios />
         </div>
         <div className="perfiles-personal__message">
-          <Link to="/">Información</Link>
-          <Link to="/">Ayuda</Link>
-          <Link to="/">Prensa</Link>
-          <Link to="/">API</Link>
-          <Link to="/">Empleo</Link>
-          <Link to="/">Privacidad</Link>
-          <Link to="/">Condiciones</Link>
-          <Link to="/">Ubicaciones</Link>
-          <Link to="/">Cuentas</Link>
-          <Link to="/">destacadas</Link>
-          <Link to="/">Hashtags</Link>
-          <Link to="/">Idioma</Link>
+          <Link to="/">Información</Link>.<Link to="/">Ayuda</Link>.
+          <Link to="/">Prensa</Link>.<Link to="/">API</Link>.
+          <Link to="/">Empleo</Link>.<Link to="/">Privacidad</Link>.
+          <Link to="/">Condiciones</Link>.<Link to="/">Ubicaciones</Link>
+          <Link to="/">Cuentas</Link>.<Link to="/">destacadas</Link>.
+          <Link to="/">Hashtags</Link>.<Link to="/">Idioma</Link>
           <p>©2021 INSTAGRAM FROM FACEBOOK</p>
         </div>
       </div>
