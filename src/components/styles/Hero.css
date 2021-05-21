@@ -1,7 +1,6 @@
 .Hero {
   display: grid;
   grid-template: 0.2fr 3fr 0.2fr auto 0.2fr / 1fr;
-  width: 80%;
   background-color: white;
   border: 1px solid #dbdbdb;
 }
@@ -35,10 +34,13 @@
   margin-right: 10px;
 }
 
-.Hero-right {
-  display: flex;
-  align-items: center;
-  /* border: 1px solid green; */
+.Hero-right__button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
 }
 
 .Hero-right a {
@@ -121,9 +123,36 @@
 }
 
 .Hero-text {
-  padding: 5px 15px;
+  padding: 10px 15px;
 }
 
 .Hero-text p {
   margin: 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.Hero-commentaryBox {
+  display: grid;
+  grid-template: 1fr / 0.2fr 2fr 0.2fr;
+}
+
+.Hero-commentaryBox__icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.Hero-commentaryBox__input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.Hero-commentaryBox__button {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0095f6;
+  cursor: pointer;
 }

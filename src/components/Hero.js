@@ -1,12 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../components/styles/Hero.css";
+import Icon from "../img/happy.png";
 
 class Hero extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {};
+  }
+
+  verificar() {
+    let btnEnviar = document.getElementById("btnEnviar");
+    let caja1 = document.getElementById("caja1");
+
+    btnEnviar.disabled = false;
+    caja1.disabled = true;
+
+    alert("hola");
   }
 
   render() {
@@ -22,7 +33,12 @@ class Hero extends React.Component {
             <Link to="./">AttackOnTitanLastSeason</Link>
           </div>
           <div className="Hero-right">
-            <Link to="./">...</Link>
+            <button
+              className="Hero-right__button"
+              onClick={() => alert("AttackOnTitanLastSeason")}
+            >
+              ...
+            </button>
           </div>
         </section>
         <section className="Hero-img">
@@ -61,7 +77,27 @@ class Hero extends React.Component {
             iste sed deleniti est modi.
           </p>
         </section>
-        <section className="Hero-commentaryBox">hola</section>
+        <section className="Hero-commentaryBox">
+          <button
+            className="Hero-commentaryBox__icon"
+            onClick={() => alert("Iconos")}
+          >
+            <img src={Icon} alt="Icon" />
+          </button>
+          <input
+            id="caja1"
+            className="Hero-commentaryBox__input"
+            type="text"
+            placeholder="Añadir un comentario..."
+          />
+          <button
+            id="btnEnviar"
+            className="Hero-commentaryBox__button"
+            onClick={this.verificar}
+          >
+            Publicar
+          </button>
+        </section>
       </section>
     );
   }

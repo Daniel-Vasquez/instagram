@@ -1,5 +1,4 @@
 .carousel {
-  width: 80%;
   overflow-y: hidden;
   scrollbar-width: none;
   position: relative;
@@ -36,7 +35,6 @@
 
 .carousel__container {
   white-space: nowrap;
-  height: 100%;
   max-width: 700px;
   /* border: 1px solid green; */
 }
@@ -48,8 +46,6 @@
   margin-right: 50px;
   display: inline-block;
   cursor: pointer;
-  transition: 450ms all;
-  transform-origin: center left;
   border-radius: 50%;
   position: relative;
 }

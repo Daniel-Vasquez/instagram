@@ -42,11 +42,7 @@ class Carrusel extends React.Component {
           {this.state.data.map((data) => {
             return (
               <div id={data.id} key={data.id} className="carousel-item">
-                <img
-                  className="carousel-item__img"
-                  src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg"
-                  alt=""
-                />
+                <img className="carousel-item__img" src={data.image} alt="" />
                 <p className="carousel-item__description">{data.name}</p>
               </div>
             );

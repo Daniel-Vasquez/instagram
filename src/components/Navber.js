@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/Navbar.css";
-import logoInsta from "../img/logo-Insta.jpg";
+import logoInsta from "../img/logo-Insta.png";
 
 const Navbar = () => {
   return (

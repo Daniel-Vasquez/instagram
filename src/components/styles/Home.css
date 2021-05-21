@@ -14,20 +14,21 @@ body {
 
 .Home-container {
   display: grid;
-  max-width: 100%;
-  grid-template: 1fr / 2fr 1fr;
+  width: 100%;
+  grid-template: 1fr / 2fr 1.1fr;
   /* border: 1px solid green; */
-  margin: 15px;
 }
 
 .container-Hero__logo {
   display: flex;
 }
 
-/* .Home-container__left {
-  width: 50%;
+.Home-container__left {
+  padding: 15px;
+  min-width: 100%;
 }
 
 .Home-container__right {
-  width: 50%;
-} */
+  min-width: 100%;
+  padding: 15px;
+}
