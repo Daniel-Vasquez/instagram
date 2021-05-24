@@ -3,15 +3,15 @@ import { Link, BrowserRouter } from "react-router-dom";
 import DanPerfil from "../img/danPerfil.png";
 import "./styles/PerfilesUsuarios.css";
 
-function PerfilesUsuarios() {
+function PerfilesUsuarios(props) {
   return (
     <BrowserRouter>
       <div className="PerfilesUsuarios-personal">
         <div className="PerfilesUsuarios-personal__imgAndName">
           <Link to="/perfil">
-            <img src={DanPerfil} alt="Foto perfil" />
+            <img src={props.image} alt="Foto perfil" />
           </Link>
-          <Link to="/perfil">daniel_Vas</Link>
+          <Link to="/perfil">{props.name}</Link>
         </div>
         <div className="PerfilesUsuarios-personal__button">
           <button onClick={() => alert("Seguir")}>Seguir</button>

@@ -1,0 +1,33 @@
+.container-Modal {
+  border: 1px solid red;
+  width: 230px;
+  height: 190px;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
+  position: absolute;
+  top: 55px;
+  right: 200px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.container-Modal__perfil {
+  border: 1px solid green;
+}
+
+.container-Modal__perfil a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border: 1px solid yellow;
+}
+
+.perfil__img {
+  background-image: url("../../img/danPerfil.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+}
+
+.container-Modal__perfil p {
+  margin: 0;
+}

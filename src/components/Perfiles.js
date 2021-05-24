@@ -25,11 +25,26 @@ function Perfiles() {
           <Link to="/perfil">Ver todo</Link>
         </div>
         <div className="perfiles-personal__usuarios">
-          <PerfilesUsuarios />
-          <PerfilesUsuarios />
-          <PerfilesUsuarios />
-          <PerfilesUsuarios />
-          <PerfilesUsuarios />
+          <PerfilesUsuarios
+            name="memesDePerritosGordos"
+            image="https://lamenteesmaravillosa.com/wp-content/uploads/2018/09/hombre-creido-pensando-que-sabe.jpg"
+          />
+          <PerfilesUsuarios
+            name="fotos.isa11"
+            image="https://thumbs.dreamstime.com/b/barro-amasado-del-perro-en-un-fondo-amarillo-134348501.jpg"
+          />
+          <PerfilesUsuarios
+            name="paisaje 4k"
+            image="https://image.winudf.com/v2/image1/bGl0dGxlYXBwYXMubGFuZHNjYXBlLndhbGxwYXBlcnNfc2NyZWVuXzhfMTU2NzI4NDI5NV8wMTA/screen-8.jpg?fakeurl=1&type=.jpg"
+          />
+          <PerfilesUsuarios
+            name="fondos"
+            image="https://hanieltech.com/wp-content/uploads/2020/04/pack-de-wallpapers-4k.jpg"
+          />
+          <PerfilesUsuarios
+            name="Lo más cool"
+            image="https://yt3.ggpht.com/ytc/AAUvwnhXNIq7_PKJbwGCkKu42JdsI8zevH3-lbwADK3z=s900-c-k-c0x00ffffff-no-rj"
+          />
         </div>
         <div className="perfiles-personal__message">
           <Link to="/">Información</Link>.<Link to="/">Ayuda</Link>.

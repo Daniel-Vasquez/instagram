@@ -4,23 +4,6 @@ import "../components/styles/Home.css";
 import Hero from "../components/Hero";
 import { getRickAndMortyCharacters } from "../utils/api";
 import Perfiles from "../components/Perfiles";
-
-// const Home = () => {
-//   return (
-//     <div className="Home">
-//       <div className="Home-container">
-//         <div className="Home-container__left">
-//           <Carrusel />
-//           <Hero />
-//         </div>
-//         <div className="Home-container__right">
-//           <h1>Soy componente chiquito</h1>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
 class Home extends React.Component {
   constructor(props) {
     super(props);
