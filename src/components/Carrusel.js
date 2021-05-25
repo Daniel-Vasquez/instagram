@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import { getRickAndMortyCharacters } from "../utils/api";
 import "./styles/Carrusel.css";
 // class Carrusel extends React.Component {
@@ -36,10 +37,15 @@ function Carrusel(props) {
       <div className="carousel__container">
         {props.data.map((data) => {
           return (
-            <div id={data.id} key={data.id} className="carousel-item">
+            <Link
+              to={`/perfil/characters/${data.id}`}
+              id={data.id}
+              key={data.id}
+              className="carousel-item"
+            >
               <img className="carousel-item__img" src={data.image} alt="" />
               <p className="carousel-item__description">{data.name}</p>
-            </div>
+            </Link>
           );
         })}
       </div>

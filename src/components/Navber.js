@@ -10,12 +10,24 @@ class Navbar extends React.Component {
   constructor() {
     super();
 
-    this.state = {};
+    this.state = {
+      modalIsOpen: false,
+    };
   }
 
-  handleOpenModal() {
-    alert("Soy Modal");
-  }
+  handleOpenModal = () => {
+    // if (!this.state.modalIsOpen) {
+    //   this.setState({ modalIsOpen: true });
+    // } else {
+    //   this.setState({ modalIsOpen: false });
+    // }
+
+    this.setState({ modalIsOpen: !this.state.modalIsOpen });
+  };
+
+  handleCloseModal = () => {
+    this.setState({ modalIsOpen: false });
+  };
 
   render() {
     return (
@@ -41,8 +53,14 @@ class Navbar extends React.Component {
             <Link className="main_icons__message" to="/"></Link>
             <Link className="main_icons__compass" to="/"></Link>
             <Link className="main_icons__heart" to="/"></Link>
-            <button className="main_icons__me"></button>
-            <Modal isOpen={true} />
+            <button
+              onClick={this.handleOpenModal}
+              className="main_icons__me"
+            ></button>
+            <Modal
+              isOpen={this.state.modalIsOpen}
+              onClose={this.handleCloseModal}
+            />
           </section>
         </div>
       </header>

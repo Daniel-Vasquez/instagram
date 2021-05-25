@@ -1,33 +1,85 @@
 .container-Modal {
-  border: 1px solid red;
-  width: 230px;
-  height: 190px;
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
-  position: absolute;
   top: 55px;
   right: 200px;
+  width: 230px;
+  height: 190px;
+  position: absolute;
   background-color: white;
   border-radius: 5px;
+  /* border: 1px solid red; */
+  box-shadow: 0px 0px 1px 1px #ededed;
 }
 
-.container-Modal__perfil {
+/* .container-Modal__perfil {
   border: 1px solid green;
-}
+} */
 
-.container-Modal__perfil a {
+.container-Modal a {
   display: flex;
   align-items: center;
   height: 100%;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
 }
 
-.perfil__img {
-  background-image: url("../../img/danPerfil.png");
-  background-size: 15px 15px;
-  background-repeat: no-repeat;
+.container-Modal__perfil img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border-radius: 50%;
 }
 
-.container-Modal__perfil p {
+.container-Modal p {
   margin: 0;
+}
+
+.container-Modal__save img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.container-Modal__configuration img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.container-Modal__switch {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.container-Modal__switch img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.container-Modal__closeSession a {
+  padding: 0 10px;
+}
+
+.container-Modal__perfil:hover a {
+  background-color: #fafafa;
+}
+
+.container-Modal__save:hover a {
+  background-color: #fafafa;
+}
+
+.container-Modal__configuration:hover a {
+  background-color: #fafafa;
+}
+
+.container-Modal__switch:hover a {
+  background-color: #fafafa;
+}
+
+.container-Modal__closeSession:hover a {
+  background-color: #fafafa;
 }

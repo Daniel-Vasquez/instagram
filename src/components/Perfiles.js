@@ -27,11 +27,11 @@ function Perfiles() {
         <div className="perfiles-personal__usuarios">
           <PerfilesUsuarios
             name="memesDePerritosGordos"
-            image="https://lamenteesmaravillosa.com/wp-content/uploads/2018/09/hombre-creido-pensando-que-sabe.jpg"
+            image="https://thumbs.dreamstime.com/b/barro-amasado-del-perro-en-un-fondo-amarillo-134348501.jpg"
           />
           <PerfilesUsuarios
             name="fotos.isa11"
-            image="https://thumbs.dreamstime.com/b/barro-amasado-del-perro-en-un-fondo-amarillo-134348501.jpg"
+            image="https://lamenteesmaravillosa.com/wp-content/uploads/2018/09/hombre-creido-pensando-que-sabe.jpg"
           />
           <PerfilesUsuarios
             name="paisaje 4k"

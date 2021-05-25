@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, BrowserRouter } from "react-router-dom";
-import DanPerfil from "../img/danPerfil.png";
 import "./styles/PerfilesUsuarios.css";
 
 function PerfilesUsuarios(props) {

@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.HomePersonajes {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.HomePersonajes-container {
+  display: grid;
+  grid-template: 1fr / 0.5fr 1fr;
+  width: 80%;
+  height: 250px;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+.HomePersonajes-container__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+
+.HomePersonajes-container__img img {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+}
+
+.HomePersonajes-container__info {
+  display: grid;
+  grid-template: 0.5fr 0.5fr 1fr / 1fr;
+  /* border: 1px solid yellow; */
+}
+.info-nameAndButtons {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid orange; */
+}
+
+.info-nameAndButtons__name {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  margin-right: 10px;
+}
+
+.info-nameAndButtons__follow {
+  height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 24px;
+  background: #0095f6;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+  outline: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.info-nameAndButtons__more {
+  height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 12px;
+  background: #0095f6;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+  outline: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.info-nameAndButtons__options {
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.info-followers {
+  display: flex;
+  align-items: center;
+}
+
+.info-followers span {
+  margin-right: 40px;
+  font-size: 16px;
+}
+
+.info-followers a {
+  margin-right: 40px;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.info-name h1 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  word-wrap: break-word;
+  margin: 0;
+}
