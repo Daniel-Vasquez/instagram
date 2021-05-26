@@ -1,0 +1,20 @@
+.containerMaintenance {
+  max-width: 1000px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.containerMaintenance-img {
+  width: 50%;
+  height: 50%;
+
+  /* border: 1px solid blue; */
+}

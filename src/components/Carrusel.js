@@ -42,6 +42,7 @@ function Carrusel(props) {
               id={data.id}
               key={data.id}
               className="carousel-item"
+              data={props.data}
             >
               <img className="carousel-item__img" src={data.image} alt="" />
               <p className="carousel-item__description">{data.name}</p>
