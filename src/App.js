@@ -4,7 +4,8 @@ import LayoutNavbar from "./components/LayoutNavber";
 import Home from "./pages/Home.js";
 import Perfil from "./pages/Perfil.js";
 import Personaje from "./components/Personaje";
-import Maintenance from "./components/Maintenance";
+import sectionMessage from "./components/sectionMessage";
+import sectionOutstanding from "./components/sectionOutstanding";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/perfil" component={Perfil} />
           <Route exact path="/perfil/characters/:id" component={Personaje} />
-          <Route exact path="/maintenance" component={Maintenance} />
+          <Route exact path="/message" component={sectionMessage} />
+          <Route exact path="/outstanding" component={sectionOutstanding} />
         </Switch>
       </LayoutNavbar>
     </BrowserRouter>

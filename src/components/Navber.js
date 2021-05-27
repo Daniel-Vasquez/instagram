@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import "./styles/Navbar.css";
-import logoInsta from "../img/logo-Insta.png";
-
 import Modal from "./Modal";
+import "./styles/Navbar.css";
+import "./styles/Modal.css";
+
+import logoInsta from "../img/logo-Insta.png";
 
 class Navbar extends React.Component {
   constructor() {
@@ -46,9 +46,11 @@ class Navbar extends React.Component {
           </section>
           <section className="main_icons">
             <Link className="main_icons__home" to="/"></Link>
-            <Link className="main_icons__message" to="/maintenance"></Link>
-            <Link className="main_icons__compass" to="/maintenance"></Link>
-            <Link className="main_icons__heart" to="/maintenance"></Link>
+            <Link className="main_icons__message" to="/message"></Link>
+            <Link className="main_icons__compass" to="/outstanding"></Link>
+            <Link className="main_icons__heart" to="/">
+              <div className="main_icons__heart--containerHover"></div>
+            </Link>
             <div
               className="main_icons__container"
               style={{

@@ -111,6 +111,7 @@ header {
   margin-right: 25px;
   width: 100%;
   height: 25px;
+  position: relative;
 }
 
 .main_icons__container {
@@ -133,5 +134,23 @@ header {
   border: none;
   cursor: pointer;
   border-radius: 50%;
+  position: relative;
   /* border: 1px solid red; */
+}
+
+.main_icons__heart--containerHover {
+  width: 450px;
+  height: 250px;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid red;
+  display: none;
+}
+
+.main_icons__heart:focus .main_icons__heart--containerHover,
+.main_icons__heart--containerHover:focus {
+  display: block;
 }
