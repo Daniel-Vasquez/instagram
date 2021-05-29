@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Modal from "./Modal";
+import ModalHeader from "./ModalHeader";
 import "./styles/Navbar.css";
 import "./styles/Modal.css";
 
@@ -62,7 +62,7 @@ class Navbar extends React.Component {
                 className="main_icons__me"
               ></button>
             </div>
-            <Modal
+            <ModalHeader
               isOpen={this.state.modalIsOpen}
               onClose={this.handleCloseModal}
             />

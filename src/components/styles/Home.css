@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-}
-
 .Home {
   max-width: 1000px;
   margin: 0 auto;

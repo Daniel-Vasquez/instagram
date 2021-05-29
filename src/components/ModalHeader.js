@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import "./styles/Modal.css";
+
 import danPerfil from "../img/danPerfil.png";
 import save from "../img/save.png";
 import settings from "../img/settings.png";
 import switchAccount from "../img/switchAccount.png";
 
-function Modal(props) {
+function ModalHeader(props) {
   if (!props.isOpen) {
     return null;
   }
@@ -44,8 +45,8 @@ function Modal(props) {
         </Link>
       </div>
     </div>,
-    document.getElementById("modalPerfil")
+    document.getElementById("modalHeader")
   );
 }
 
-export default Modal;
+export default ModalHeader;

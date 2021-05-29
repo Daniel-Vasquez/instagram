@@ -2,7 +2,7 @@
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
   top: 55px;
-  right: 50px;
+  right: 200px;
   /* right: 200px; */
   width: 230px;
   height: 190px;
