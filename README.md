@@ -4,13 +4,13 @@
 
 ### Implementation to make the app:
 
-- React app
-- Api request
+- React.js
+- React router
+- Use The Rick and Morty API
 - Using the BEM methodology for CSS
 - Single page app
-- Manage portals
-- Manage modal
+- React Portals
 - Asynchronous
-- React router
+- Implementation to build the app
 
 ![Insta](https://github.com/Daniel-Vasquez/instagram/blob/master/snapshots/insta.gif)
