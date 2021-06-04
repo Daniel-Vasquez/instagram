@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -146,4 +142,57 @@ header {
 .main_icons__heart:focus .main_icons__heart--containerHover,
 .main_icons__heart--containerHover:focus {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .main_icons {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header {
+    display: block;
+    height: 44px;
+    /* border: 1px solid red; */
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 320px;
+    padding: 0;
+    /* border: 1px solid green; */
+  }
+
+  .container .container_img {
+    width: 50px;
+  }
+
+  .main_input {
+    margin-right: 0;
+  }
+
+  .container .main_input {
+    width: auto;
+  }
+
+  .container .main_input_container {
+    width: auto;
+  }
+
+  .main_icons {
+    display: grid;
+    width: 30px;
+    height: 25px;
+    grid-template: 1fr / 1fr;
+  }
+
+  .main_icons .main_icons__home,
+  .main_icons__compass,
+  .main_icons__heart,
+  .main_icons__me,
+  .container .main_input {
+    display: none;
+  }
 }

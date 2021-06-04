@@ -4,6 +4,7 @@ import "../components/styles/Perfil.css";
 import configuration from "../img/configuracion.png";
 import danPerfil from "../img/danPerfil.png";
 import ModalPerfil from "../components/ModalPerfil";
+import danLogo from "../img/danPerfil.png";
 
 class Perfil extends React.Component {
   constructor(props) {
@@ -76,13 +77,31 @@ class Perfil extends React.Component {
           </div>
           <div className="containerPerfil">
             <h1>Estas en Perfil</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            tenetur maxime, quia debitis voluptates aspernatur porro accusantium
-            dignissimos enim, sed voluptatum, sint placeat praesentium harum
-            ipsa et a cumque beatae.
-            <p></p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              tenetur maxime, quia debitis voluptates aspernatur porro
+              accusantium dignissimos enim, sed voluptatum, sint placeat
+              praesentium harum ipsa et a cumque beatae. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Eligendi tenetur maxime, quia
+              debitis voluptates aspernatur porro accusantium dignissimos enim,
+              sed voluptatum, sint placeat praesentium harum ipsa et a cumque
+              beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eligendi tenetur maxime, quia debitis voluptates aspernatur porro
+              accusantium dignissimos enim, sed voluptatum, sint placeat
+              praesentium harum ipsa et a cumque beatae.
+            </p>
           </div>
         </section>
+        <div className="Home-container__displayNone">
+          <Link className="displayNone__home" to="/perfil"></Link>
+          <Link className="displayNone__search" to="/perfil"></Link>
+          <Link className="displayNone__more" to="/perfil"></Link>
+          <Link className="displayNone__heart" to="/perfil"></Link>
+          <Link className="displayNone__perfil" to="/perfil">
+            <img src={danLogo} alt="Imagen perfil" />
+          </Link>
+        </div>
       </div>
     );
   }

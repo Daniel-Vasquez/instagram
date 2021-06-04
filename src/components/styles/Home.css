@@ -26,3 +26,98 @@
   width: 100%;
   padding: 15px;
 }
+
+.Home-container__displayNone {
+  display: none;
+  width: 320px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  background-color: #fff;
+  border-top: 1px solid #dbdbdb;
+  /* border: 1px solid red; */
+}
+
+.displayNone__home {
+  background-image: url("../../img/home.png");
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+}
+
+.displayNone__search {
+  background-image: url("../../img/lupa.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+}
+
+.displayNone__more {
+  background-image: url("../../img/more.png");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.displayNone__heart {
+  background-image: url("../../img/corazon.png");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+
+.displayNone__perfil img {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  /* .Home {
+    max-width: 768px;
+    margin: 0;
+  } */
+
+  .Home-container {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .Home-container__right {
+    display: none;
+    width: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Home {
+    max-width: 320px;
+    margin: 0;
+  }
+
+  .Home-container {
+    width: 100%;
+    display: block;
+  }
+
+  .Home-container__left {
+    min-width: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .Home-container__right {
+    display: none;
+    width: 0px;
+  }
+
+  .Home-container__displayNone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
