@@ -1,7 +1,7 @@
 .HomePersonajes {
   max-width: 1000px;
   margin: 0 auto;
-  border-bottom: 1px solid #dbdbdb;
+  /* border-bottom: 1px solid #dbdbdb; */
 }
 
 .HomePersonajes-container {
@@ -10,6 +10,7 @@
   width: 80%;
   height: 250px;
   margin: 0 auto;
+  /* border-bottom: 1px solid #dbdbdb; */
   /* border: 1px solid black; */
 }
 

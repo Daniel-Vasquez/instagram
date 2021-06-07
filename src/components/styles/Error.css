@@ -1,0 +1,12 @@
+.containerError {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.containerError img {
+  width: 40%;
+  height: 400px;
+}

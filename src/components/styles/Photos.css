@@ -1,0 +1,16 @@
+.containerPhotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 20px 20px;
+  justify-content: center;
+  border-top: 1px solid #dbdbdb;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.containerPhotos img {
+  width: 250px;
+  height: 320px;
+}
