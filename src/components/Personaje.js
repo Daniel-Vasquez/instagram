@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { getCharacter, getRandomDogs } from "../utils/api";
+
 import "./styles/Personaje.css";
 
 class Personaje extends React.Component {
@@ -7,20 +9,62 @@ class Personaje extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
+      character: null,
+      loading: false,
+      error: false,
+      // character: {
+      //   info: null,
+      //   loading: false,
+      //   error: false
+      // },
+
+      // photos: {
+      //   photos: [],
+      //   loading: false,
+      //   error: false
+      // }
     };
   }
 
+  componentDidMount() {
+    const { id } = this.props.match.params;
+
+    this.setState({ loading: true });
+    getCharacter(id)
+      .then((character) => {
+        console.log({ character });
+        this.setState({ character });
+      })
+      .catch((error) => {
+        console.log(typeof error);
+        this.setState({ error: error.message });
+      })
+      .finally(() => this.setState({ loading: false }));
+  }
+
   render() {
+    const { character, loading, error } = this.state;
+    if (loading) {
+      return <p>Cargando, jeje...</p>;
+    }
+
+    if (error) {
+      return <p>Ups!! {error}</p>;
+    }
+
+    if (!character) {
+      return <p>Sin personaje</p>;
+    }
+
     return (
       <div className="HomePersonajes">
         <div className="HomePersonajes-container">
           <div className="HomePersonajes-container__img">
-            <img src="" alt="Foto perfil" />
+            <img src={character.image} alt="Foto perfil" />
           </div>
           <div className="HomePersonajes-container__info">
             <div className="info-nameAndButtons">
-              <p className="info-nameAndButtons__name">Daniel</p>
+              <p className="info-nameAndButtons__name">{character.name}</p>
               <button
                 className="info-nameAndButtons__follow"
                 onClick={() => alert("Seguir")}

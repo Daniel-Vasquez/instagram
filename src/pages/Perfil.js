@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../components/styles/Perfil.css";
 import configuration from "../img/configuracion.png";
 import danPerfil from "../img/danPerfil.png";
 import ModalPerfil from "../components/ModalPerfil";
 import danLogo from "../img/danPerfil.png";
+import "../components/styles/Perfil.css";
 
 class Perfil extends React.Component {
   constructor(props) {

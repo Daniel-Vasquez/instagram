@@ -12,7 +12,13 @@ export function request(url, options = {}) {
     delete options.queryParams;
   }
 
-  return fetch(url, options).then((response) => response.json());
+  return fetch(url, options).then(async (response) => {
+    if (response.ok) {
+      return response.json();
+    }
+
+    throw new Error(JSON.stringify(await response.json()));
+  });
 }
 
 function queryParams(params) {
@@ -23,6 +29,16 @@ function queryParams(params) {
 
 const RICK_AND_MORTY_URL = "https://rickandmortyapi.com/api/character/";
 
+const DOGS_API = "...";
+
 export function getRickAndMortyCharacters(queryParams = {}) {
   return request(RICK_AND_MORTY_URL, { queryParams });
+}
+
+export function getCharacter(id) {
+  return request(`${RICK_AND_MORTY_URL}${id}`);
+}
+
+export function getRandomDogs() {
+  return request(DOGS_API);
 }
