@@ -9,41 +9,48 @@ class Personaje extends React.Component {
     super(props);
 
     this.state = {
-      character: null,
-      loading: false,
-      error: false,
-      // character: {
-      //   info: null,
-      //   loading: false,
-      //   error: false
-      // },
+      character: {
+        info: null,
+        loading: false,
+        error: false,
+      },
 
-      // photos: {
-      //   photos: [],
-      //   loading: false,
-      //   error: false
-      // }
+      photos: {
+        photos: [],
+        loading: false,
+        error: false,
+      },
     };
   }
 
   componentDidMount() {
     const { id } = this.props.match.params;
 
-    this.setState({ loading: true });
+    this.getCharacter(id);
+  }
+
+  getCharacter(id) {
+    const stateCharacter = this.state.character;
+
+    this.setState({ character: { ...stateCharacter, loading: true } });
     getCharacter(id)
-      .then((character) => {
-        console.log({ character });
-        this.setState({ character });
-      })
-      .catch((error) => {
-        console.log(typeof error);
-        this.setState({ error: error.message });
-      })
-      .finally(() => this.setState({ loading: false }));
+      .then((character) =>
+        this.setState({ character: { ...stateCharacter, character } })
+      )
+      .catch((error) =>
+        this.setState({
+          character: { ...stateCharacter, error: error.message },
+        })
+      )
+      .finally(() =>
+        this.setState({
+          character: { ...this.state.character, loading: false },
+        })
+      );
   }
 
   render() {
-    const { character, loading, error } = this.state;
+    const { character, loading, error } = this.state.character;
     if (loading) {
       return <p>Cargando, jeje...</p>;
     }

@@ -29,7 +29,7 @@ function queryParams(params) {
 
 const RICK_AND_MORTY_URL = "https://rickandmortyapi.com/api/character/";
 
-const DOGS_API = "...";
+const DOGS_API = "https://dog.ceo/api/breeds/image/random/";
 
 export function getRickAndMortyCharacters(queryParams = {}) {
   return request(RICK_AND_MORTY_URL, { queryParams });
@@ -39,6 +39,6 @@ export function getCharacter(id) {
   return request(`${RICK_AND_MORTY_URL}${id}`);
 }
 
-export function getRandomDogs() {
-  return request(DOGS_API);
+export function getRandomDogs(count = 6) {
+  return request(`${DOGS_API}${count}`);
 }
