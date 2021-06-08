@@ -52,3 +52,10 @@
 .containerModalPerfil-links button:hover {
   background-color: #fafafa;
 }
+
+@media screen and (max-width: 320px) {
+  .containerModalPerfil {
+    width: 300px;
+    top: 10%;
+  }
+}
