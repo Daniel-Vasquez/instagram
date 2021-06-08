@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles/sectionMessage.css";
 import sitioEnConst from "../img/SITIO-EN-CONSTRUCCION.jpg";
+import "./styles/sectionMessage.css";
 
 function sectionMessage() {
   return (

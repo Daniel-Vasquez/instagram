@@ -4,7 +4,6 @@ import { getCharacter, getRandomDogs } from "../utils/api";
 import Photos from "./Photos";
 import Loading from "./Loading";
 import Error from "./Error";
-
 import "./styles/Personaje.css";
 
 class Personaje extends React.Component {
@@ -85,7 +84,7 @@ class Personaje extends React.Component {
 
     if (error) {
       return (
-        <Error message="Error al encontrar al personaje, intentar más tarde, gracias." />
+        <Error message="Error al encontrar al personaje, intentalo más tarde, gracias." />
       );
     }
 
@@ -138,7 +137,6 @@ class Personaje extends React.Component {
           </div>
         </div>
         <Photos photos={this.state.photos.photos} />
-        {/* {this.state.photos.loading && <p>Cargando...</p>} */}
         {this.state.photos.loading && <Loading />}
         {this.state.photos.error && (
           <Error message="Ups!! Error al cargar las imagenes." />

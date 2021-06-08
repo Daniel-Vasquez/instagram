@@ -37,7 +37,7 @@
 
 .info-nameAndButtons__name {
   font-weight: 300;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 32px;
   margin-right: 10px;
 }
@@ -128,19 +128,26 @@
   }
 
   .HomePersonajes-container__info {
-    display: block;
+    grid-template: 0.5fr 0.5fr 0.3fr / 1fr;
   }
 
   .info-nameAndButtons {
     justify-content: center;
+    flex-direction: column;
   }
 
   .info-nameAndButtons__name {
     font-size: 16px;
+    margin: 0;
   }
 
   .info-nameAndButtons__follow {
     padding: 0 16px;
+    margin: 5px 0;
+  }
+
+  .info-nameAndButtons__more {
+    margin: 0;
   }
 
   .info-followers span {
@@ -153,6 +160,7 @@
 
   .info-name {
     margin: 5px;
+    height: 10px;
   }
 
   .containerPhotos {

@@ -9,7 +9,6 @@
   grid-template: 1fr / 0.5fr 1fr;
   width: 80%;
   margin: 0 auto;
-  /* border: 1px solid black; */
 }
 
 .Perfil-container__img {
@@ -19,7 +18,6 @@
   margin-right: 30px;
   background-color: transparent;
   border: none;
-  /* border: 1px solid blue; */
 }
 
 .Perfil-container__img img {
@@ -32,22 +30,21 @@
 .Perfil-container__info {
   display: grid;
   grid-template: 0.5fr 0.5fr 1fr / 1fr;
-  /* border: 1px solid yellow; */
 }
+
 .info-nameAndButtons {
   display: flex;
   align-items: center;
-  /* border: 1px solid orange; */
 }
 
-.info-nameAndButtons__name {
+.PerfilInfo-nameAndButtons__name {
   font-weight: 300;
   font-size: 28px;
   line-height: 32px;
   margin-right: 10px;
 }
 
-.info-nameAndButtons__edit {
+.PerfilInfo-nameAndButtons__edit {
   height: 30px;
   cursor: pointer;
   border-radius: 3px;
@@ -65,37 +62,36 @@
   border: 1px solid #dbdbdb;
 }
 
-.info-nameAndButtons__ajustes {
+.PerfilInfo-nameAndButtons__ajustes {
   height: 30px;
   cursor: pointer;
   background: transparent;
   border: none;
-  /* border: 1px solid red; */
 }
 
-.info-nameAndButtons__more img {
+.PerfilInfo-nameAndButtons__more img {
   width: 100%;
   height: 100%;
 }
 
-.info-followers {
+.PerfilInfo-followers {
   display: flex;
   align-items: center;
 }
 
-.info-followers span {
+.PerfilInfo-followers span {
   margin-right: 40px;
   font-size: 16px;
 }
 
-.info-followers a {
+.PerfilInfo-followers a {
   margin-right: 40px;
   font-size: 16px;
   text-decoration: none;
   color: black;
 }
 
-.info-name h1 {
+.PerfilInfo-name h1 {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
@@ -103,14 +99,13 @@
   margin: 0;
 }
 
-.info-name p {
+.PerfilInfo-name p {
   margin: 5px 0;
 }
 
 .containerPerfil {
   max-width: 1000px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 .Home-container__displayNone {
@@ -123,7 +118,6 @@
   height: 44px;
   background-color: #fff;
   border-top: 1px solid #dbdbdb;
-  /* border: 1px solid red; */
 }
 
 .displayNone__home {
@@ -174,14 +168,59 @@
 
   .Perfil-container {
     display: block;
-    width: 90%;
-  }
-
-  .Perfil-container__img img {
-    height: 120px;
+    width: 100%;
   }
 
   .containerPerfil {
-    width: 90%;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .Perfil-container__img {
+    margin-right: 0;
+  }
+
+  .Perfil-container__img img {
+    width: 40%;
+    height: 120px;
+    margin-top: 5px;
+  }
+
+  .Perfil-container__info {
+    display: block;
+  }
+
+  .PerfilInfo-nameAndButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PerfilInfo-followers {
+    padding: 5px;
+  }
+
+  .PerfilInfo-nameAndButtons__edit {
+    margin: 5px 0;
+  }
+
+  .PerfilInfo-nameAndButtons__ajustes {
+    margin-bottom: 10px;
+  }
+
+  .PerfilInfo-followers span {
+    margin-right: 10px;
+  }
+
+  .PerfilInfo-followers a {
+    margin-right: 0;
+  }
+
+  .PerfilInfo-name {
+    padding: 5px;
+  }
+
+  .PerfilInfo-nameAndButtons__name {
+    margin: 5px 0;
   }
 }

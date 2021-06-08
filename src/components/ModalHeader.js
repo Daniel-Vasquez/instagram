@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
-import "./styles/Modal.css";
-
 import danPerfil from "../img/danPerfil.png";
 import save from "../img/save.png";
 import settings from "../img/settings.png";
 import switchAccount from "../img/switchAccount.png";
+import "./styles/Modal.css";
 
 function ModalHeader(props) {
   if (!props.isOpen) {

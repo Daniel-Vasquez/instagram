@@ -9,7 +9,6 @@
   border-radius: 3px;
   margin-bottom: 30px;
   overflow: scroll;
-  /* border: 1px solid red; */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -27,7 +26,6 @@
 .carousel__container {
   white-space: nowrap;
   max-width: 700px;
-  /* border: 1px solid green; */
 }
 
 .carousel-item {
@@ -39,7 +37,6 @@
   font-size: 1rem;
   text-align: center;
   position: relative;
-  /* border: 1px solid blue; */
 }
 
 .carousel-item__img {

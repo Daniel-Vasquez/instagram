@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles/Perfiles.css";
-import DanPerfil from "../img/danPerfil.png";
-
 import PerfilesUsuarios from "./PerfilesUsuarios";
+import DanPerfil from "../img/danPerfil.png";
+import "./styles/Perfiles.css";
 
 function Perfiles() {
   return (
@@ -53,7 +52,9 @@ function Perfiles() {
           <Link to="/">Condiciones</Link>.<Link to="/">Ubicaciones</Link>
           <Link to="/">Cuentas</Link>.<Link to="/">destacadas</Link>.
           <Link to="/">Hashtags</Link>.<Link to="/">Idioma</Link>
-          <p>©2021 INSTAGRAM FROM FACEBOOK</p>
+          <p className="perfiles-personal__author">
+            ©2021 Created by Daniel Vásquez
+          </p>
         </div>
       </div>
     </section>

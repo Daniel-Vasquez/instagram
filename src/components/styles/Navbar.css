@@ -14,7 +14,6 @@ header {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, auto);
-  /* border: 1px solid green; */
   width: 1000px;
   padding: 0 20px;
 }
@@ -135,7 +134,7 @@ header {
   right: 0px;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid red;
+  border: 2px solid #dbdbdb;
   display: none;
 }
 
@@ -154,7 +153,6 @@ header {
   header {
     display: block;
     height: 44px;
-    /* border: 1px solid red; */
   }
 
   .container {
@@ -162,7 +160,6 @@ header {
     justify-content: space-evenly;
     width: 320px;
     padding: 0;
-    /* border: 1px solid green; */
   }
 
   .container .container_img {
@@ -184,7 +181,7 @@ header {
   .main_icons {
     display: grid;
     width: 30px;
-    height: 25px;
+    height: 32px;
     grid-template: 1fr / 1fr;
   }
 

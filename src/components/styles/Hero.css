@@ -10,23 +10,34 @@
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  /* border: 1px solid red; */
 }
 
 .Hero-left {
   display: flex;
   align-items: center;
-  /* border: 1px solid green; */
 }
 
-.Hero-left a {
+.Hero-left__container {
+  display: flex;
+  align-items: center;
+}
+
+.Hero-left .Hero-left__link {
   text-decoration: none;
   color: black;
 }
 
-.Hero-left:hover a {
+.Hero-imgTitle__name {
+  margin: 0;
+}
+
+.Hero-imgTitle__name:hover {
   text-decoration: underline;
 }
+
+/* .Hero-left:hover a {
+  text-decoration: underline;
+} */
 
 .Hero-imgTitle__img {
   width: 40px;

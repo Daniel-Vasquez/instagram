@@ -1,23 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import "./styles/Carrusel.css";
 
 function Carrusel(props) {
   return (
     <section className="carousel">
       <div className="carousel__container">
-        {props.data.map((data) => {
+        {props.characters.map((character) => {
           return (
             <Link
-              to={`/perfil/characters/${data.id}`}
-              id={data.id}
-              key={data.id}
+              to={`/perfil/characters/${character.id}`}
+              id={character.id}
+              key={character.id}
               className="carousel-item"
-              data={props.data}
             >
-              <img className="carousel-item__img" src={data.image} alt="" />
-              <p className="carousel-item__description">{data.name}</p>
+              <img
+                className="carousel-item__img"
+                src={character.image}
+                alt=""
+              />
+              <p className="carousel-item__description">{character.name}</p>
             </Link>
           );
         })}

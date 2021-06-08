@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ModalHeader from "./ModalHeader";
+import logoInsta from "../img/logo-Insta.png";
 import "./styles/Navbar.css";
 import "./styles/Modal.css";
-
-import logoInsta from "../img/logo-Insta.png";
 
 class Navbar extends React.Component {
   constructor() {

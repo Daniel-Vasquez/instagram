@@ -38,16 +38,16 @@ class Perfil extends React.Component {
                 <img src={danPerfil} alt="Foto perfil" />
               </button>
               <div className="Perfil-container__info">
-                <div className="info-nameAndButtons">
-                  <p className="info-nameAndButtons__name">Daniel_Vas</p>
+                <div className="PerfilInfo-nameAndButtons">
+                  <p className="PerfilInfo-nameAndButtons__name">Daniel_Vas</p>
                   <button
-                    className="info-nameAndButtons__edit"
+                    className="PerfilInfo-nameAndButtons__edit"
                     onClick={() => alert("Editar")}
                   >
                     Editar perfil
                   </button>
                   <button
-                    className="info-nameAndButtons__ajustes"
+                    className="PerfilInfo-nameAndButtons__ajustes"
                     onClick={this.handleOpenModal}
                   >
                     <img src={configuration} alt="Ajustes" />
@@ -57,7 +57,7 @@ class Perfil extends React.Component {
                     onClose={this.handleCloseModal}
                   />
                 </div>
-                <div className="info-followers">
+                <div className="PerfilInfo-followers">
                   <span>
                     <strong>4</strong> Publicaciones
                   </span>
@@ -68,7 +68,7 @@ class Perfil extends React.Component {
                     <strong>49</strong> seguidos
                   </Link>
                 </div>
-                <div className="info-name">
+                <div className="PerfilInfo-name">
                   <h1>Daniel</h1>
                   <p>Descripción...</p>
                 </div>
@@ -77,7 +77,6 @@ class Perfil extends React.Component {
           </div>
           <div className="containerPerfil">
             <h1>Perfil</h1>
-
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
               tenetur maxime, quia debitis voluptates aspernatur porro

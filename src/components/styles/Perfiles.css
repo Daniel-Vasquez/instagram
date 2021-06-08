@@ -1,13 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
 .container-perfiles {
   position: sticky;
   top: 45px;
   height: 100vh;
   margin-top: 10px;
-  /* border: 1px solid red; */
 }
 
 .perfiles {
@@ -105,10 +100,10 @@
   padding: 0 5px;
 }
 
-.perfiles-personal__message p {
-  margin: 0;
-  color: #c7c7c7;
+.perfiles-personal__message .perfiles-personal__author {
+  margin-top: 15px;
+  color: #000;
   font-size: 11px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 13px;
 }
