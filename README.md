@@ -13,4 +13,6 @@
 - Asynchronous
 - Implementation to build the app
 
-![Insta](https://github.com/Daniel-Vasquez/instagram/blob/master/snapshots/insta.gif)
+![InstaDesk](https://github.com/Daniel-Vasquez/instagram/blob/master/snapshots/instaDesk.gif)
+
+![InstaMobile](https://github.com/Daniel-Vasquez/instagram/blob/master/snapshots/instaMobile.gif)
