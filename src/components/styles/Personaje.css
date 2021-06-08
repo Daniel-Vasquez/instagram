@@ -1,7 +1,6 @@
 .HomePersonajes {
   max-width: 1000px;
   margin: 0 auto;
-  /* border-bottom: 1px solid #dbdbdb; */
 }
 
 .HomePersonajes-container {
@@ -10,15 +9,15 @@
   width: 80%;
   height: 250px;
   margin: 0 auto;
-  /* border-bottom: 1px solid #dbdbdb; */
-  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .HomePersonajes-container__img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid blue; */
 }
 
 .HomePersonajes-container__img img {
@@ -30,12 +29,10 @@
 .HomePersonajes-container__info {
   display: grid;
   grid-template: 0.5fr 0.5fr 1fr / 1fr;
-  /* border: 1px solid yellow; */
 }
 .info-nameAndButtons {
   display: flex;
   align-items: center;
-  /* border: 1px solid orange; */
 }
 
 .info-nameAndButtons__name {

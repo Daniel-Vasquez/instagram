@@ -30,7 +30,11 @@ class Personaje extends React.Component {
     const { id } = this.props.match.params;
 
     this.getCharacter(id);
-    this.getDogs();
+    this.getDogs(this.getRandomNumber(2, 12));
+  }
+
+  getRandomNumber(min, max) {
+    return parseInt(Math.random() * (max - min) + min);
   }
 
   getCharacter(id) {
@@ -119,13 +123,13 @@ class Personaje extends React.Component {
             </div>
             <div className="info-followers">
               <span>
-                <strong>4</strong> Publicaciones
+                <strong>{this.getRandomNumber(2, 12)}</strong> Publicaciones
               </span>
               <Link to="/">
-                <strong>256</strong> seguidores
+                <strong>{this.getRandomNumber(10, 25)}</strong> seguidores
               </Link>
               <Link to="/">
-                <strong>498</strong> seguidos
+                <strong>{this.getRandomNumber(10, 25)}</strong> seguidos
               </Link>
             </div>
             <div className="info-name">
