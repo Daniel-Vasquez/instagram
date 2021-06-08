@@ -133,7 +133,7 @@ class Personaje extends React.Component {
               </Link>
             </div>
             <div className="info-name">
-              <h1>Daniel</h1>
+              <h1>{character.name}</h1>
             </div>
           </div>
         </div>

@@ -174,5 +174,14 @@
 
   .Perfil-container {
     display: block;
+    width: 90%;
+  }
+
+  .Perfil-container__img img {
+    height: 120px;
+  }
+
+  .containerPerfil {
+    width: 90%;
   }
 }

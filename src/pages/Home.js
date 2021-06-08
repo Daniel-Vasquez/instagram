@@ -32,7 +32,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <div className="Home">
           <div className="Home-container">
             <div className="Home-container__left">
@@ -45,15 +45,15 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="Home-container__displayNone">
-          <Link className="displayNone__home" to="/perfil"></Link>
-          <Link className="displayNone__search" to="/perfil"></Link>
-          <Link className="displayNone__more" to="/perfil"></Link>
+          <Link className="displayNone__home" to="/"></Link>
+          <Link className="displayNone__search" to="/message"></Link>
+          <Link className="displayNone__more" to="/outstanding"></Link>
           <Link className="displayNone__heart" to="/perfil"></Link>
           <Link className="displayNone__perfil" to="/perfil">
             <img src={danLogo} alt="Imagen perfil" />
           </Link>
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
