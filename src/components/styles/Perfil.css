@@ -32,7 +32,7 @@
   grid-template: 0.5fr 0.5fr 1fr / 1fr;
 }
 
-.info-nameAndButtons {
+.PerfilInfo-nameAndButtons {
   display: flex;
   align-items: center;
 }
