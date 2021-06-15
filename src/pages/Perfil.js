@@ -83,6 +83,18 @@ class Perfil extends React.Component {
               accusantium dignissimos enim, sed voluptatum, sint placeat
               praesentium harum ipsa et a cumque beatae.
             </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              tenetur maxime, quia debitis voluptates aspernatur porro
+              accusantium dignissimos enim, sed voluptatum, sint placeat
+              praesentium harum ipsa et a cumque beatae.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              tenetur maxime, quia debitis voluptates aspernatur porro
+              accusantium dignissimos enim, sed voluptatum, sint placeat
+              praesentium harum ipsa et a cumque beatae.
+            </p>
           </div>
         </section>
         <div className="Home-container__displayNone">

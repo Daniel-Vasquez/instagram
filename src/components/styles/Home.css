@@ -25,7 +25,7 @@
 
 .Home-container__displayNone {
   display: none;
-  width: 320px;
+  width: 500px;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -83,9 +83,12 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 500px) {
   .Home {
-    max-width: 320px;
+    width: 100%;
     margin: 0;
   }
 

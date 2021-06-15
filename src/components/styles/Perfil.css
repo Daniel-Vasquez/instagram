@@ -106,11 +106,12 @@
 .containerPerfil {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 8px;
 }
 
 .Home-container__displayNone {
   display: none;
-  width: 320px;
+  width: 100%;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -155,11 +156,29 @@
   height: 25px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 700px) {
   .Home-container__displayNone {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .main_icons .main_icons__home,
+  .main_icons .main_icons__compass,
+  .main_icons .main_icons__heart,
+  .main_icons__container,
+  .container .main_input {
+    display: none;
+  }
+
+  .main_icons {
+    width: auto;
+    grid-template-columns: 1fr;
+    margin-left: 35px;
   }
 
   .Perfil {
@@ -181,7 +200,7 @@
   }
 
   .Perfil-container__img img {
-    width: 40%;
+    width: 20%;
     height: 120px;
     margin-top: 5px;
   }
@@ -197,7 +216,8 @@
   }
 
   .PerfilInfo-followers {
-    padding: 5px;
+    padding: 5px 0;
+    justify-content: center;
   }
 
   .PerfilInfo-nameAndButtons__edit {
@@ -217,7 +237,8 @@
   }
 
   .PerfilInfo-name {
-    padding: 5px;
+    padding: 5px 0;
+    text-align: center;
   }
 
   .PerfilInfo-nameAndButtons__name {
