@@ -26,7 +26,7 @@ function Hero(props) {
           <div className="Hero-right">
             <button
               className="Hero-right__button"
-              onClick={() => alert("AttackOnTitanLastSeason")}
+              onClick={() => alert("Options")}
             >
               ...
             </button>
