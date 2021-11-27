@@ -4,6 +4,8 @@ import configuration from "../img/configuracion.png";
 import danPerfil from "../img/danPerfil.png";
 import ModalPerfil from "../components/ModalPerfil";
 import danLogo from "../img/danPerfil.png";
+import corazon from "../img/corazon.png";
+import comentario from "../img/comentario.png";
 import "../components/styles/Perfil.css";
 
 class Perfil extends React.Component {
@@ -11,8 +13,15 @@ class Perfil extends React.Component {
     super(props);
 
     this.state = {
+      loadign: false,
+      error: null,
       modalIsOpen: false,
+      images: [],
     };
+  }
+
+  getRandomArbitrary = (min, max)=> {
+    return Math.random() * (max - min) + min;
   }
 
   handleOpenModal = () => {
@@ -25,7 +34,17 @@ class Perfil extends React.Component {
     this.setState({ modalIsOpen: false });
   };
 
+  componentDidMount() {
+    this.setState({loadign: true, error: null})
+    fetch(`https://dog.ceo/api/breed/hound/images/random/${this.getRandomArbitrary(7, 15)}`)
+      .then((res) => res.json())
+      .then((json) => this.setState({ images: json.message }))
+      .finally((error) => this.setState({ loading: false, error: error }));
+  }
+
   render() {
+    const { images } = this.state;
+
     return (
       <React.Fragment>
         <section>
@@ -40,10 +59,7 @@ class Perfil extends React.Component {
               <div className="Perfil-container__info">
                 <div className="PerfilInfo-nameAndButtons">
                   <p className="PerfilInfo-nameAndButtons__name">Daniel_Vas</p>
-                  <button
-                    className="PerfilInfo-nameAndButtons__edit"
-                    onClick={() => alert("Editar")}
-                  >
+                  <button className="PerfilInfo-nameAndButtons__edit">
                     Editar perfil
                   </button>
                   <button
@@ -59,7 +75,7 @@ class Perfil extends React.Component {
                 </div>
                 <div className="PerfilInfo-followers">
                   <span>
-                    <strong>4</strong> Publicaciones
+                    <strong>{images.length}</strong> Publicaciones
                   </span>
                   <Link to="/">
                     <strong>26</strong> seguidores
@@ -75,26 +91,22 @@ class Perfil extends React.Component {
               </div>
             </div>
           </div>
-          <div className="containerPerfil">
-            <h1>Perfil</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              tenetur maxime, quia debitis voluptates aspernatur porro
-              accusantium dignissimos enim, sed voluptatum, sint placeat
-              praesentium harum ipsa et a cumque beatae.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              tenetur maxime, quia debitis voluptates aspernatur porro
-              accusantium dignissimos enim, sed voluptatum, sint placeat
-              praesentium harum ipsa et a cumque beatae.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              tenetur maxime, quia debitis voluptates aspernatur porro
-              accusantium dignissimos enim, sed voluptatum, sint placeat
-              praesentium harum ipsa et a cumque beatae.
-            </p>
+          <div className="containerImages">
+            {images.map((image, index) => (
+              <React.Fragment key={index}>
+                <div className="containerImages-container">
+                  <img
+                    className="containerImages-container__img"
+                    src={image}
+                    alt={image}
+                  />
+                  <div className="containerImages-container__icons">
+                    <img src={corazon} alt="" />
+                    <img src={comentario} alt="" />
+                  </div>
+                </div>
+              </React.Fragment>
+            ))}
           </div>
         </section>
         <div className="Home-container__displayNone">

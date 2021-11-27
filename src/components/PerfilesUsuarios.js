@@ -12,7 +12,7 @@ function PerfilesUsuarios(props) {
         <Link to="/">{props.name}</Link>
       </div>
       <div className="PerfilesUsuarios-personal__button">
-        <button onClick={() => alert("Seguir")}>Seguir</button>
+        <button>Seguir</button>
       </div>
     </div>
   );

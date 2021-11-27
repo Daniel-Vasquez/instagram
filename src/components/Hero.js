@@ -26,43 +26,41 @@ function Hero(props) {
           <div className="Hero-right">
             <button
               className="Hero-right__button"
-              onClick={() => alert("Options")}
             >
               ...
             </button>
           </div>
         </section>
         <section className="Hero-img">
-          <img src={character.image} alt="Img de noticia" />
+          <img src={character.image} loading="lazy" alt="Img de noticia"/>
         </section>
         <section className="Hero-icons">
           <div className="Hero-icons__left">
             <button
-              className="Hero-icons__heart"
-              onClick={() => alert("Heart")}
+              className="Hero-icons__heart"            
             ></button>
             <button
               className="Hero-icons__commentary"
-              onClick={() => alert("Commentary")}
             ></button>
             <button
               className="Hero-icons__send"
-              onClick={() => alert("send")}
             ></button>
           </div>
           <div className="Hero-icons__right">
             <button
               className="Hero-icons__save"
-              onClick={() => alert("Save")}
             ></button>
           </div>
         </section>
         <section className="Hero-text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            tempore corporis sapiente nemo nihil amet ipsam necessitatibus,
-            temporibus exercitationem culpa neque eaque inventore omnis libero
-            iste sed deleniti est modi.
+            Location: {character.location.name}.
+          </p>
+          <p>
+            Origin: {character.origin.name}.
+          </p>
+          <p>
+            Specie: {character.species}.
           </p>
         </section>
         <section className="Hero-commentaryBox">
@@ -79,7 +77,6 @@ function Hero(props) {
           />
           <button
             className="Hero-commentaryBox__button"
-            onClick={() => alert("Publicar")}
           >
             Publicar
           </button>

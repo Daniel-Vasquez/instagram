@@ -110,6 +110,16 @@ header {
   width: 31px;
   height: 31px;
   border-radius: 50%;
+  background-image: url("../../img/danPerfil.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+.main_icons__container:focus {
+  padding: 5px;
+  border: 1px solid black;
 }
 
 .main_icons__me {
@@ -125,22 +135,112 @@ header {
   position: relative;
 }
 
-.main_icons__heart--containerHover {
+.main_icons-heart__containerHover {
+  display: none;
   width: 450px;
   height: 250px;
-  position: absolute;
-  top: 40px;
-  right: 0px;
   background-color: white;
   border-radius: 5px;
   border: 2px solid #dbdbdb;
-  display: none;
+  color: black;
 }
 
-.main_icons__heart:focus .main_icons__heart--containerHover,
-.main_icons__heart--containerHover:focus {
-  display: block;
+.main_icons__heart:focus .main_icons-heart__containerHover,
+.main_icons-heart__containerHover:focus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* ----- */
+
+.container-Modal {
+  display: none;
+  width: 230px;
+  height: 190px;
+  right: 0;
+  top: 42px;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 1px #ededed;
+}
+
+.main_icons__container:focus-within .container-Modal, 
+.container-Modal:focus-within {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr;
+}
+
+.container-Modal a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.container-Modal__perfil img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.container-Modal p {
+  margin: 0;
+}
+
+.container-Modal__save img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.container-Modal__configuration img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.container-Modal__switch {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.container-Modal__switch img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.container-Modal__closeSession a {
+  padding: 0 10px;
+}
+
+.container-Modal__perfil:hover a {
+  background-color: #fafafa;
+}
+
+.container-Modal__save:hover a {
+  background-color: #fafafa;
+}
+
+.container-Modal__configuration:hover a {
+  background-color: #fafafa;
+}
+
+.container-Modal__switch:hover a {
+  background-color: #fafafa;
+}
+
+.container-Modal__closeSession:hover a {
+  background-color: #fafafa;
+}
+
+
+/* ------ */
 
 @media screen and (max-width: 950px) {
   .container {

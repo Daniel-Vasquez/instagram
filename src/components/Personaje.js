@@ -78,6 +78,7 @@ class Personaje extends React.Component {
 
   render() {
     const { character, loading, error } = this.state.character;
+    const {photos} = this.state.photos
     if (loading) {
       return <Loading />;
     }
@@ -122,7 +123,7 @@ class Personaje extends React.Component {
             </div>
             <div className="info-followers">
               <span>
-                <strong>{this.getRandomNumber(2, 12)}</strong> Publicaciones
+                <strong>{photos.length}</strong> Publicaciones
               </span>
               <Link to="/">
                 <strong>{this.getRandomNumber(10, 25)}</strong> seguidores
