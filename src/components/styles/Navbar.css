@@ -98,9 +98,12 @@ header {
   background-image: url("../../img/corazon.png");
   background-repeat: no-repeat;
   margin-right: 25px;
-  width: 100%;
+  width: auto;
   height: 25px;
   position: relative;
+  border: none;
+  cursor: pointer;
+  background-color: white;
 }
 
 .main_icons__container {
@@ -115,6 +118,7 @@ header {
   background-size: 100%;
   border: 1px solid transparent;
   position: relative;
+  cursor: pointer;
 }
 
 .main_icons__container:focus {
@@ -137,12 +141,15 @@ header {
 
 .main_icons-heart__containerHover {
   display: none;
-  width: 450px;
-  height: 250px;
+  width: 400px;
+  height: 200px;
   background-color: white;
   border-radius: 5px;
   border: 2px solid #dbdbdb;
   color: black;
+  position: absolute;
+  top: 40px;
+  right: 5px;
 }
 
 .main_icons__heart:focus .main_icons-heart__containerHover,

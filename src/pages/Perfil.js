@@ -77,16 +77,16 @@ class Perfil extends React.Component {
                   <span>
                     <strong>{images.length}</strong> Publicaciones
                   </span>
-                  <Link to="/">
+                  <Link to="/perfil">
                     <strong>26</strong> seguidores
                   </Link>
-                  <Link to="/">
+                  <Link to="/perfil">
                     <strong>49</strong> seguidos
                   </Link>
                 </div>
                 <div className="PerfilInfo-name">
                   <h1>Daniel</h1>
-                  <p>Descripción...</p>
+                  <p>Desarrollador front-end</p>
                 </div>
               </div>
             </div>

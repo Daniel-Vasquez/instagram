@@ -13,13 +13,13 @@ const Navber = () => {
     <header>
         <div className="container">
           <div className="container_img">
-            <a href="/">
+            <Link href="/">
               <img
                 className="container-img__logo"
                 src={logoInsta}
                 alt="Logo de instagram"
               />
-            </a>
+            </Link>
           </div>
           <section className="main_input">
             <div className="main_input_container">
@@ -31,11 +31,11 @@ const Navber = () => {
             <Link className="main_icons__home" to="/"></Link>
             <Link className="main_icons__message" to="/message"></Link>
             <Link className="main_icons__compass" to="/outstanding"></Link>
-            <Link className="main_icons__heart" to="/">
+            <button className="main_icons__heart" to="./">
               <div className="main_icons-heart__containerHover">
                 <h1>En construcción.</h1>
               </div>
-            </Link>
+            </button>
 
             <button  className="main_icons__container .main_icons__me">
               <div className="container-Modal ">
