@@ -95,10 +95,10 @@ header {
 }
 
 .main_icons .main_icons__heart {
-  background-image: url("../../img/corazon.png");
+  background-image: url("../../img/corazonNegro.png");
   background-repeat: no-repeat;
+  background-size: 90%;
   margin-right: 25px;
-  width: auto;
   height: 25px;
   position: relative;
   border: none;
@@ -253,6 +253,11 @@ header {
   .container {
     width: auto;
   }
+
+  .main_icons .main_icons__heart {
+    background-size: auto;
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -263,6 +268,7 @@ header {
 
   .container .container_img {
     width: auto;
+    height: 43px;
   }
 
   .container .main_input {
@@ -273,6 +279,13 @@ header {
     width: 200px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .container .container_img img {
+    height: 100%;
+  }
+}
+
 
 @media screen and (max-width: 500px) {
   header {

@@ -6,6 +6,7 @@ import { getRickAndMortyCharacters } from "../utils/api";
 import Perfiles from "../components/Perfiles";
 import danLogo from "../img/danPerfil.png";
 import "../components/styles/Home.css";
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
