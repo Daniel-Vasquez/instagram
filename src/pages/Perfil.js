@@ -4,8 +4,8 @@ import configuration from "../img/configuracion.png";
 import danPerfil from "../img/danPerfil.png";
 import ModalPerfil from "../components/ModalPerfil";
 import danLogo from "../img/danPerfil.png";
-import corazon from "../img/corazon.png";
-import comentario from "../img/comentario.png";
+import corazon from "../img/corazonBlanco.png";
+import comentario from "../img/comentarioBlanco.png";
 import "../components/styles/Perfil.css";
 
 class Perfil extends React.Component {
