@@ -20,9 +20,9 @@ class Perfil extends React.Component {
     };
   }
 
-  getRandomArbitrary = (min, max)=> {
-    return Math.random() * (max - min) + min;
-  }
+  getRandomArbitrary = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
+  };
 
   handleOpenModal = () => {
     const { modalIsOpen } = this.state;
@@ -35,8 +35,13 @@ class Perfil extends React.Component {
   };
 
   componentDidMount() {
-    this.setState({loadign: true, error: null})
-    fetch(`https://dog.ceo/api/breed/hound/images/random/${this.getRandomArbitrary(7, 15)}`)
+    this.setState({ loadign: true, error: null });
+    fetch(
+      `https://dog.ceo/api/breed/hound/images/random/${this.getRandomArbitrary(
+        7,
+        15
+      )}`
+    )
       .then((res) => res.json())
       .then((json) => this.setState({ images: json.message }))
       .finally((error) => this.setState({ loading: false, error: error }));
@@ -52,7 +57,6 @@ class Perfil extends React.Component {
             <div className="Perfil-container">
               <button
                 className="Perfil-container__img"
-                onClick={() => alert("Foto perfil")}
               >
                 <img src={danPerfil} alt="Foto perfil" />
               </button>
@@ -101,8 +105,16 @@ class Perfil extends React.Component {
                     alt={image}
                   />
                   <div className="containerImages-container__icons">
-                    <img src={corazon} alt="" />
-                    <img src={comentario} alt="" />
+                    <div className="container-icons">
+                      <div className="container-icons__heart">
+                        <img src={corazon} alt="" />
+                        <p>{this.getRandomArbitrary(2,7)}</p>
+                      </div>
+                      <div className="container-icons__comment">
+                        <img src={comentario} alt="" />
+                        <p>{this.getRandomArbitrary(0,4)}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </React.Fragment>
