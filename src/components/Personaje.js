@@ -104,19 +104,16 @@ class Personaje extends React.Component {
               <p className="info-nameAndButtons__name">{character.name}</p>
               <button
                 className="info-nameAndButtons__follow"
-                onClick={() => alert("Seguir")}
               >
                 Seguir
               </button>
               <button
                 className="info-nameAndButtons__more"
-                onClick={() => alert("More")}
               >
                 ·
               </button>
               <button
                 className="info-nameAndButtons__options"
-                onClick={() => alert("Options")}
               >
                 ...
               </button>

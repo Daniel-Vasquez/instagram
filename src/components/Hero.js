@@ -66,7 +66,6 @@ function Hero(props) {
         <section className="Hero-commentaryBox">
           <button
             className="Hero-commentaryBox__icon"
-            onClick={() => alert("Iconos")}
           >
             <img src={Icon} alt="Icon" />
           </button>
